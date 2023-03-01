@@ -125,7 +125,7 @@ mt.compile('<ul>{{list}}</ul>', {
 
 ## Benchmarks
 
-Benchmark results are produced from the [benchmark script](test/benchmark/index.js).
+Benchmark results are produced from the [benchmark script](https://github.com/fatherbrennan/migasc-template/blob/master/test/benchmark/index.js).
 
 | Test                                                 | Operations per Second | Relative Margin of Error | Samples |
 | ---------------------------------------------------- | --------------------: | -----------------------: | ------: |
