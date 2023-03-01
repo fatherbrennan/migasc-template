@@ -2,6 +2,12 @@
 
 All notable changes to the "migasc-template" extension will be documented in this file.
 
+## [0.1.2] - 2023-03-01
+
+### Fixed
+
+- Fix spelling error in README.
+
 ## [0.1.1] - 2023-03-01
 
 ### Fixed
