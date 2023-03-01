@@ -1,4 +1,4 @@
-# MisascTemplate
+# MigascTemplate
 
 Simple and fast templating engine.
 
