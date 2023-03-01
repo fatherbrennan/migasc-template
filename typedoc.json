@@ -1,0 +1,12 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "basePath": "./",
+  "disableSources": true,
+  "entryPoints": ["src/index.ts"],
+  "githubPages": true,
+  "hideGenerator": true,
+  "includeVersion": true,
+  "name": "MigascTemplate",
+  "out": "docs",
+  "readme": "README.md"
+}

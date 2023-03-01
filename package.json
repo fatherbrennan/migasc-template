@@ -1,0 +1,45 @@
+{
+  "name": "migasc-template",
+  "version": "0.1.0",
+  "description": "Simple and fast templating engine.",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/web/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "benchmark": "node test/benchmark/index.js",
+    "build": "rollup -c rollup.config.ts --configPlugin rollup-plugin-esbuild",
+    "dev": "npm run watch",
+    "dist": "tsc && rollup -c rollup.config.ts --configPlugin rollup-plugin-esbuild --environment NODE_ENV:production",
+    "docs": "typedoc",
+    "prod": "npm run dist",
+    "start": "node .",
+    "watch": "rollup -c rollup.config.ts --configPlugin rollup-plugin-esbuild -w"
+  },
+  "author": "fatherbrennan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "benchmark": "^2.1.4",
+    "ejs": "^3.1.8",
+    "handlebars": "^4.7.7",
+    "rollup": "^3.17.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.25",
+    "typescript": "^4.9.5"
+  }
+}
